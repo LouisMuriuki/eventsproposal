@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import Carousel from "react-multi-carousel";
@@ -95,7 +96,8 @@ const Hero2 = () => {
       >
         {places.map((place, i) => {
           return (
-            <img
+            <Image
+              fill={true}
               key={i}
               className="h-full w-full object-cover"
               src={`/${place}.jpg`}

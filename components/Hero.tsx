@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -8,10 +9,11 @@ const Hero = () => {
         <div className="h-[700px] flex">
           {/* Image */}
           <div className="w-full relative">
-            <img
+            <Image
               className="h-full w-full object-cover"
               src="/beach.jpg"
               alt="Hero Image"
+              fill={true}
             />
             <div className="absolute inset-0 bg-black opacity-40 sm:items-start sm:justify-start"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:translate-x-0 sm:translate-y-0 sm:left-1/4 sm:top-1/4">

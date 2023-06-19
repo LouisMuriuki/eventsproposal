@@ -4,6 +4,8 @@ import Hero2 from "@/components/Hero2";
 import Navbar from "@/components/Navbar";
 import { useSearchParams } from "next/navigation";
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const HomePage = () => {
   const searchParams = useSearchParams();
@@ -12,15 +14,15 @@ const HomePage = () => {
 
   switch (search) {
     case "001":
-      alert("This link is from BeachBoy one");
+      toast.success("This link is from BeachBoy one");
 
       break;
     case "002":
-      alert("This link is from BeachBoy two");
+      toast.success("This link is from BeachBoy two");
 
       break;
     case "003":
-      alert("This link is from BeachBoy three");
+      toast.success("This link is from BeachBoy three");
 
       break;
 
@@ -34,6 +36,7 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <Hero2 />
+      <ToastContainer />
     </div>
   );
 };
