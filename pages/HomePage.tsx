@@ -24,6 +24,8 @@ const HomePage = () => {
       toast.success("This link is from BeachBoy three");
 
       break;
+    case "":
+        break
 
     default:
      toast.success("This link is from an unknown BeachBoy");
