@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Hero = () => {
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    toast.success("Event registered");
+  };
   return (
     <div className="flex flex-col md:flex-row mx-2 my-1">
       {/* Left Side */}
@@ -125,6 +130,7 @@ const Hero = () => {
           <div className="mt-6">
             <button
               type="submit"
+              onClick={(e) => handleClick(e)}
               className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Register

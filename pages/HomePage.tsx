@@ -10,7 +10,6 @@ import "react-toastify/dist/ReactToastify.css";
 const HomePage = () => {
   const searchParams = useSearchParams();
   const search = searchParams?.get("id");
-  console.log(search);
 
   switch (search) {
     case "001":
@@ -27,7 +26,7 @@ const HomePage = () => {
       break;
 
     default:
-      alert("This link is from an unknown BeachBoy");
+     toast.success("This link is from an unknown BeachBoy");
       break;
   }
 
