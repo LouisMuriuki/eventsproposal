@@ -70,8 +70,8 @@ const Hero2 = () => {
     <div className="bg-gray-50 px-5 py-10">
       <div className="flex items-center justify-between">
         <div className="flex flex-col">
-          <h2 className="font-bold text-4xl my-10">Our Favourite Events</h2>
-          <p className="w-[450px] mb-5">
+          <h2 className="font-bold text-2xl md:text-4xl my-10">Our Favourite Events</h2>
+          <p className="w-[350px] md:w-[450px] mb-5">
             Browse through some of the best collections of events best rated by
             our previous clients
           </p>
@@ -97,7 +97,8 @@ const Hero2 = () => {
         {places.map((place, i) => {
           return (
             <Image
-              fill={true}
+              width={1000}
+              height={500}
               key={i}
               className="h-full w-full object-cover"
               src={`/${place}.jpg`}

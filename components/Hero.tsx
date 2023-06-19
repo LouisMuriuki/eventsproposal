@@ -20,8 +20,8 @@ const Hero = () => {
               alt="Hero Image"
               fill={true}
             />
-            <div className="absolute inset-0 bg-black opacity-40 sm:items-start sm:justify-start"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:translate-x-0 sm:translate-y-0 sm:left-1/4 sm:top-1/4">
+            <div className="absolute inset-0 bg-black opacity-40 "></div>
+            <div className="absolute md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 translate-x-0 translate-y-0 top-1/4 px-10 md:px-0">
               <h1 className="text-2xl md:text-3xl text-white font-semibold">
                 Explore Tanzania with EventBrite
               </h1>

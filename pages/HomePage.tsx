@@ -11,29 +11,31 @@ const HomePage = () => {
   const searchParams = useSearchParams();
   const search = searchParams?.get("id");
 
-  switch (search) {
-    case "001":
-      toast.success("This link is from BeachBoy one");
+  if (search !== null) {
+    switch (search) {
+      case "001":
+        toast.success("This link is from BeachBoy one");
 
-      break;
-    case "002":
-      toast.success("This link is from BeachBoy two");
+        break;
+      case "002":
+        toast.success("This link is from BeachBoy two");
 
-      break;
-    case "003":
-      toast.success("This link is from BeachBoy three");
+        break;
+      case "003":
+        toast.success("This link is from BeachBoy three");
 
-      break;
-    case "":
-      break;
+        break;
+      case "null":
+        break;
 
-    default:
-      toast.success("This link is from an unknown BeachBoy");
-      break;
+      default:
+        toast.success("This link is from an unknown BeachBoy");
+        break;
+    }
   }
 
   return (
-    <div>
+    <div className="max-w-screen">
       <Navbar />
       <Hero />
       <Hero2 />
